@@ -129,9 +129,15 @@ header .header-black li a {
 }
 
 header #logotipo{
+	transition: 1s;
 	position: absolute;
 	top: 20px;
 	margin-left: -250px;
+	z-index: 10;
+}
+
+header #logotipo.efeito{
+	opacity: 0.5;
 }
 
 header .row{
@@ -157,8 +163,13 @@ header .row{
 	padding: 10px 25px;
 }
 
-#menu li.search {
+#search {
 	width: 182px;
+	transition: 1s;
+}
+
+#search.ativo{
+	width: 300px;
 }
 
 #menu li.search button{
@@ -180,6 +191,10 @@ header .row{
 	border: none;
 	height: 30px;
 	line-height: 30px;
+}
+
+#menu li.search.ativo input {
+	width: 300px;
 }
 
 #banner {
