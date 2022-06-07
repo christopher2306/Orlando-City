@@ -344,3 +344,7 @@ footer .text-roxo{
 	font-family: 'OpenSans';
 	font-weight: bold;
 }
+
+#logo_footer{
+	margin-top: 30px;
+}
