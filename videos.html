@@ -87,6 +87,61 @@
 			</div>
 		</div>
 
+			<div id="List_video" class="container">
+				<div class="row text-center">
+					<h2>List Videos</h2>
+					<hr>	
+				</div>				
+
+				<div class="row thumbnails owl-carousel owl-theme">
+
+					<div class="item"  data-video="highlights">
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Highlights</h3>
+						</div>
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+						<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+						<h3>Orlando City Foundation</h3>
+						</div>
+					</div>
+
+					<div class="item"  data-video="highlights">
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Highlights</h3>
+						</div>
+					</div>
+
+					<div class="item"  data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+						<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+						<h3>Orlando City Foundation</h3>
+						</div>
+					</div>
+
+					<div class="item"  data-video="highlights">
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Highlights</h3>
+						</div>
+					</div>
+
+					<div class="item"  data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+						<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+						<h3>Orlando City Foundation</h3>
+						</div>
+					</div>
+
+	
+				</div>
+
+			</div>
+
 	</section>
 
 <footer>
@@ -184,25 +239,21 @@
 
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/OwlCarousel2/dist/owl.carousel.min.js"></script>
-	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+	<script src="js/efeitos.js"></script>
 	<script>
 	
-	$(document).ready(function(){
+		$(function(){
+			$(".thumbnails .item").on("click", function(){
 
-		$("#logotipo").on("mouseover", function(){
+				console.log($(this).data('video'));
+				$("video").attr({
+					"src":"mp4/"+$(this).data('video')+".mp4",
+					"poster":"img/"+$(this).data('video')+".jpg"
+			});
 
-			$("#logotipo").addClass("efeito");
-
-		}).on("mouseout", function(){
-
-			$("#logotipo").removeClass("efeito");
-
+			});
 		});
-
-		
-
-	});
-
 
 	</script>
 </body>
