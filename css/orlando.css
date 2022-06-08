@@ -141,7 +141,8 @@ header #logotipo.efeito{
 }
 
 header .row{
-	margin-left: 520px;
+	margin-top: 15px;
+	margin-left: 320px;
 }
 
 #menu{
@@ -334,7 +335,6 @@ header .row{
 	border-color: #FDE192;
 	min-width: 164px;
 	height: 44px;
-
 }
 
 
@@ -453,3 +453,7 @@ footer .list-socials i {
 	margin: 7px auto;
 }
 
+#Video{
+	margin-left: 250px;
+	margin-top: 20px;
+}
