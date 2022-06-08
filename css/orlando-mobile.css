@@ -4,6 +4,14 @@
 		display: none;
 	}
 }
+
+@media only screen and (max-width: 1080px) {
+	#banner{
+		width: 100%;
+		
+	}
+}
+
 /*Tamanho padrão para smartphones*/
 @media only screen and (max-width: 480px) {
 	.header-black ul, #menu{
